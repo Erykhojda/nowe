@@ -4,8 +4,8 @@ import classes from "./Form.module.css";
 import Form from "./Form";
 
 const CampaignBuilder = () => {
-	// const local = "local"
-	// localStorage.setItem("local", local)
+	const local = "local"
+	localStorage.setItem("local", local)
 
 	// function setCookie(name, value, days) {
 	// 	const expirationDate = new Date();
@@ -43,9 +43,10 @@ const CampaignBuilder = () => {
 	// 		<div><p>Nie ma cookies</p></div>
 	// 	)
 	// }
-
+	const localq = localStorage.getItem("local")
 	return (
 		<>
+			<h1>{localq}</h1>
 			<section className={classes.campaign}>
 				<Form />
 			</section>
