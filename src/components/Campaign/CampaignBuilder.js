@@ -46,8 +46,9 @@ const CampaignBuilder = () => {
 	const localq = localStorage.getItem("local")
 	return (
 		<>
-			<h1>{localq}</h1>
+
 			<section className={classes.campaign}>
+				<h1>{localq}</h1>
 				<Form />
 			</section>
 
