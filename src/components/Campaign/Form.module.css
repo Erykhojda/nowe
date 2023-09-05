@@ -1,0 +1,189 @@
+.form {
+	margin: 1rem 0;
+	height: 23rem;
+	overflow: auto;
+}
+
+.control {
+	margin-bottom: 0.5rem;
+}
+
+.control label {
+	font-weight: bold;
+	margin-bottom: 0.25rem;
+	display: block;
+}
+
+.control input {
+	font: inherit;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 20rem;
+	max-width: 100%;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+}
+
+.actions button {
+	font: inherit;
+	color: #5a1a01;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	border-radius: 25px;
+	padding: 0.5rem 2rem;
+}
+
+.actions .submit {
+	border: 1px solid #5a1a01;
+	background-color: #5a1a01;
+	color: white;
+}
+
+.actions .submit:hover,
+.actions .submit:active {
+	background-color: #7a2706;
+}
+
+.invalid label {
+	color: #ca3e51;
+}
+
+.invalid input {
+	border-color: #aa0b20;
+	background-color: #ffeff1;
+}
+
+label p {
+	display: inline;
+	color: green;
+}
+
+@media (max-width: 914px) {
+	.actions button {
+		padding: 0.5rem 1.6rem;
+		font-size: 0.8rem;
+	}
+}
+
+.campaign {
+	max-width: 45rem;
+	width: 90%;
+	margin: auto;
+	margin-top: -27rem;
+	position: relative;
+	background-color: #858383;
+	color: white;
+	border-radius: 14px;
+	padding: 1rem;
+	box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+}
+
+.contenerItems {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenerItems_item {
+	flex-basis: 30%;
+	height: 10rem;
+	border-radius: 0.4rem;
+	background-image: url("../../assets/1.png");
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.selectedTable {
+	flex-basis: 30%;
+	height: 10rem;
+	border-radius: 0.4rem;
+	background-image: url("../../assets/1.png");
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	border: 2px solid green;
+}
+
+.selectedPark {
+	flex-basis: 30%;
+	height: 10rem;
+	border-radius: 0.4rem;
+	background-image: url("../../assets/park.png");
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	border: 2px solid green;
+}
+.selectedParallettes {
+	flex-basis: 30%;
+	height: 10rem;
+	border-radius: 0.4rem;
+	background-image: url("../../assets/P30CM1q1.png");
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	border: 2px solid green;
+}
+
+@media (max-width: 778px) {
+	.campaign {
+		max-width: 35rem;
+		margin-top: -35rem;
+	}
+	.contenerItems {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.contenerItems_item {
+		flex-basis: 40%;
+		margin: 1rem;
+	}
+	.selectedTable {
+		flex-basis: 40%;
+		margin: 1rem;
+	}
+
+	.selectedPark {
+		flex-basis: 40%;
+		margin: 1rem;
+	}
+	.selectedParallettes {
+		flex-basis: 40%;
+		margin: 1rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.campaign {
+		margin-top: -35rem;
+	}
+	.contenerItems_item {
+		flex-basis: 60%;
+	}
+	.selectedTable {
+		flex-basis: 60%;
+		margin: 1rem;
+	}
+
+	.selectedPark {
+		flex-basis: 60%;
+		margin: 1rem;
+	}
+	.selectedParallettes {
+		flex-basis: 60%;
+		margin: 1rem;
+	}
+}
+
+.contenerItems_item:nth-child(2) {
+	background-image: url("../../assets/park.png");
+}
+
+.contenerItems_item:nth-child(3) {
+	background-image: url("../../assets/P30CM1q1.png");
+}

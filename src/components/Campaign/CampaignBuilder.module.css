@@ -1,0 +1,100 @@
+.campaign {
+	max-width: 45rem;
+	width: 90%;
+	margin: auto;
+	margin-top: -27rem;
+	position: relative;
+	background-color: #858383;
+	color: white;
+	border-radius: 14px;
+	padding: 1rem;
+	box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+}
+
+.contenerItems {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenerItems_item {
+	flex-basis: 30%;
+	height: 10rem;
+	border-radius: 0.4rem;
+	background-image: url("../../assets/1.png");
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+@media (max-width: 778px) {
+	.campaign {
+		max-width: 35rem;
+		margin-top: -35rem;
+	}
+	.contenerItems {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.contenerItems_item {
+		flex-basis: 40%;
+		margin: 1rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.campaign {
+		margin-top: -35rem;
+	}
+	.contenerItems_item {
+		flex-basis: 60%;
+	}
+}
+
+.selected {
+	flex-basis: 30%;
+	height: 10rem;
+	border-radius: 0.4rem;
+	background-image: url("../../assets/1.png");
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	border: 2px solid green;
+}
+
+.contenerItems_item:nth-child(2) {
+	background-image: url("../../assets/park.png");
+}
+
+.contenerItems_item:nth-child(3) {
+	background-image: url("../../assets/P30CM1q1.png");
+}
+
+.formCointainer {
+	display: flex;
+}
+
+.form {
+	margin: 1rem 0;
+	height: 19rem;
+	overflow: auto;
+}
+
+.input {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.input label {
+	font-weight: bold;
+	margin-right: 1rem;
+}
+
+.input input {
+	width: 3rem;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font: inherit;
+	padding-left: 0.5rem;
+}
